@@ -39,8 +39,9 @@ div.wrap div.img-box {
 }
 
 div.wrap div.img-box img {
-  width: 100%;
+  width: 85%;
   height: 100%;
+  overflow: hidden;
 }
 
 div.wrap div.account-links a {

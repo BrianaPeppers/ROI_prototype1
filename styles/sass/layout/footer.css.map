@@ -2,7 +2,9 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "footer.sass"
+        "footer.sass",
+        "../abstracts/_abstracts.sass",
+        "../abstracts/mfv.sass"
     ],
     "names": [],
     "file": "footer.css"

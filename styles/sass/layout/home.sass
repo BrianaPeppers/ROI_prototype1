@@ -1,0 +1,78 @@
+@import '../abstracts/_abstracts'
+
+div.site-banner-wrap
+    width: 100vw
+    height: 75vh
+    @include center-flex
+    background-color: $blue
+
+
+div.site-banner
+    
+    @include wrap
+    height: 100%
+    @include center-flex
+    flex-wrap: wrap
+    div.banner-box
+        @include center-flex
+        height: 85%
+        padding: 0 1rem
+    div.desc
+        flex-basis: 55%
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+        h1,p
+            width: 85%
+            font-weight: 200
+            color: whitesmoke
+        h1
+            font-size: 4rem
+            font-weight: 200
+        p
+            font-size: 1.7rem
+        button
+            background-color: $green
+            font-size: 2rem
+            width: 45%
+    div.pic
+        flex-basis: 45%
+        img
+            height: 75%
+     
+div.transition
+    display: flex
+    width: 100%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    height: 10vh
+    h3
+        font-size: 2rem
+  
+
+div.product-container
+    @include wrap
+    margin: auto
+    @include center-flex
+    justify-content: space-around
+    flex-wrap: wrap
+    div.product-box
+        flex-basis: 30%
+        background-color: $footer-light-blue
+        min-height: 45vh
+        max-height: 45vh
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        margin: 3rem 0
+        padding: 1.5rem
+        h3, p
+            text-align: center
+        img
+            flex-basis: 35%
+        p
+            font-size: 1.2rem
+            

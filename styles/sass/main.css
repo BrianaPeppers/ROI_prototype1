@@ -2,10 +2,21 @@
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
+a, a:hover {
+  text-decoration: none !important;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, li, div {
+  font-family: 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+  overflow-y: hidden;
+}
+
+img {
+  overflow-y: hidden;
 }
 
 header.header-wrap {
@@ -49,13 +60,183 @@ div.wrap div.img-box {
 }
 
 div.wrap div.img-box img {
-  width: 100%;
+  width: 85%;
   height: 100%;
+  overflow: hidden;
 }
 
 div.wrap div.account-links a {
   font-size: 2.7rem;
   color: whitesmoke;
   padding: 0 2rem;
+}
+
+div.site-banner-wrap {
+  width: 100vw;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #104b7d;
+}
+
+div.site-banner {
+  max-width: 1024px;
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.site-banner div.banner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85%;
+  padding: 0 1rem;
+}
+
+div.site-banner div.desc {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.site-banner div.desc h1, div.site-banner div.desc p {
+  width: 85%;
+  font-weight: 200;
+  color: whitesmoke;
+}
+
+div.site-banner div.desc h1 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+div.site-banner div.desc p {
+  font-size: 1.7rem;
+}
+
+div.site-banner div.desc button {
+  background-color: #7ec142;
+  font-size: 2rem;
+  width: 45%;
+}
+
+div.site-banner div.pic {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+div.site-banner div.pic img {
+  height: 75%;
+}
+
+div.transition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 10vh;
+}
+
+div.transition h3 {
+  font-size: 2rem;
+}
+
+div.product-container {
+  max-width: 1024px;
+  width: 100vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.product-container div.product-box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: #f8fafd;
+  min-height: 45vh;
+  max-height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem 0;
+  padding: 1.5rem;
+}
+
+div.product-container div.product-box h3, div.product-container div.product-box p {
+  text-align: center;
+}
+
+div.product-container div.product-box img {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+div.product-container div.product-box p {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */
