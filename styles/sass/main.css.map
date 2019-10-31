@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,KAAK;CAAG;;AAEvB,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;CAAG;;AEJ5B,AAAA,MAAM,AAAA,YAAY,CAAC;EACf,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,IAAI;EAChB,gBAAgB,EJJZ,OAAO;EIKX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CAAG;;AAC9B,AAAA,GAAG,AAAA,KAAK,CAAC;EJeL,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,KAAK;EIdZ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,aAAa;CAcA;;AAlBlC,AAKI,GALD,AAAA,KAAK,CAKJ,GAAG,AAAA,QAAQ,CAAC;EACR,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CAGE;;AAb7B,AAWQ,GAXL,AAAA,KAAK,CAKJ,GAAG,AAAA,QAAQ,CAMP,GAAG,CAAC;EACA,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAAG;;AAb3B,AAeQ,GAfL,AAAA,KAAK,CAcJ,GAAG,AAAA,cAAc,CACb,CAAC,CAAC;EACE,SAAS,EAAE,MAAM;EACjB,KAAK,EAAE,UAAU;EACjB,OAAO,EAAE,MAAM;CAAG",
+    "sources": [
+        "main.sass",
+        "abstracts/_abstracts.sass",
+        "abstracts/mfv.sass",
+        "layout/_layout.sass",
+        "layout/base.sass",
+        "layout/footer.sass",
+        "layout/header.sass",
+        "abstracts/_abstracts.sass",
+        "abstracts/mfv.sass",
+        "layout/home.sass"
+    ],
+    "names": [],
+    "file": "main.css"
+}

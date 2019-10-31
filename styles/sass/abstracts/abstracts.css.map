@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "abstracts.sass",
+        "mfv.sass"
+    ],
+    "names": [],
+    "file": "abstracts.css"
+}
