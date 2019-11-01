@@ -1,1 +1,59 @@
 @import '../abstracts/_abstracts'
+footer.wrap-db
+    margin-top: 5rem
+    @include center-flex
+    background-color: $footer-dark-blue
+    justify-content: flex-start
+    min-height: 30vh
+    width: 100vw
+    flex-direction: column
+    footer.wrap-lb
+        @include center-flex
+        background-color: $footer-light-blue
+        height: 25vh
+        width: 100vw
+
+div.footer-box
+    flex-basis: 25%
+    margin: 0 2rem
+    background-color: white
+    height: 75%
+    @include center-flex
+    flex-direction: column
+    span.red-line
+        height: .2rem
+        width: 1.5rem
+        background-color: #d2451e
+        margin: 1rem 0
+    h1,h3,a
+        font-family: 'Source Sans Pro', sans-serif
+        text-align: center
+    h1
+        font-size: 2.4rem
+        color: $footer-dark-blue
+    h3, a
+        font-size: 1.5rem
+    a
+        color: #d2451e
+        i
+            padding-right: .5rem
+            color: black
+div.volunteer
+    @include center-flex
+    min-height: 5vh
+    width: 75vw
+    justify-content: space-around
+    h3
+        font-size: 1.5rem
+        color: white
+        text-align: center
+        width: 40%
+        padding: 1rem 0
+
+
+    
+
+
+
+
+
