@@ -398,4 +398,27 @@ form.login-form a {
   font-size: 1.7rem;
   color: #104b7d;
 }
+
+div.choice-group {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.choice-group h1 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+div.choice-group button {
+  width: 30%;
+}
 /*# sourceMappingURL=main.css.map */
