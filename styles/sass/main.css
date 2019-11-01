@@ -448,6 +448,14 @@ div.roi-container {
       flex-wrap: wrap;
 }
 
+div.roi-container h1.roi-calc {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3rem 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 div.roi-container div.roi-box {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
