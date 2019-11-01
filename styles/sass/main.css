@@ -418,7 +418,11 @@ div.choice-group h1 {
   padding-bottom: 4rem;
 }
 
-div.choice-group button {
+div.choice-group a {
   width: 30%;
+}
+
+div.choice-group button {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
