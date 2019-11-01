@@ -19,6 +19,9 @@ div.choice-group h1 {
 
 div.choice-group a {
   width: 30%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 div.choice-group button {

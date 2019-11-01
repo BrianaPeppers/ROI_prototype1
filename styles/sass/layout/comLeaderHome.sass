@@ -1,0 +1,26 @@
+@import '../abstracts/_abstracts'
+
+
+div.roi-container
+    @include wrap
+    margin: auto
+    @include center-flex
+    justify-content: space-around
+    flex-wrap: wrap
+    div.roi-box
+        flex-basis: 30%
+        background-color: $footer-light-blue
+        min-height: 45vh
+        max-height: 45vh
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        margin: 3rem 0
+        padding: 1.5rem
+        h3, p
+            text-align: center
+        img
+            flex-basis: 35%
+        p
+            font-size: 1.2rem

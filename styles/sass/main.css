@@ -420,9 +420,67 @@ div.choice-group h1 {
 
 div.choice-group a {
   width: 30%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 div.choice-group button {
   width: 100%;
+}
+
+div.roi-container {
+  max-width: 1024px;
+  width: 100vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.roi-container div.roi-box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: #f8fafd;
+  min-height: 45vh;
+  max-height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem 0;
+  padding: 1.5rem;
+}
+
+div.roi-container div.roi-box h3, div.roi-container div.roi-box p {
+  text-align: center;
+}
+
+div.roi-container div.roi-box img {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+div.roi-container div.roi-box p {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */
