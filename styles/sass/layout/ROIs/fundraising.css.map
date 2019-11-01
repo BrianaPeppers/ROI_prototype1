@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "fundraising.sass",
+        "../../abstracts/_abstracts.sass",
+        "../../abstracts/mfv.sass"
+    ],
+    "names": [],
+    "file": "fundraising.css"
+}
