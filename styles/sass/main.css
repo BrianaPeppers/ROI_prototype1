@@ -488,7 +488,8 @@ div.roi-container div.roi-box img {
       flex-basis: 35%;
 }
 
-div.roi-container div.roi-box p {
-  font-size: 1.2rem;
+div.roi-container div.roi-box button {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
