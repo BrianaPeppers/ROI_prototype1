@@ -24,7 +24,9 @@ div.choice-group a {
   min-width: fit-content;
 }
 
-div.choice-group button {
+div.choice-group div.btn-group button {
   width: 100%;
+  margin: 2rem 0;
+  text-align: center;
 }
 /*# sourceMappingURL=register.css.map */
