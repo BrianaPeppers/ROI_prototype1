@@ -24,6 +24,9 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
 
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
     <title>TB ver1</title>
 </head>
 
@@ -41,51 +44,153 @@
             </div>
         </header>
         <div class="form-box">
-                <form action="">
-                    <ol>
-                        <!-- Q1 -->
+            <form action="">
+                <ol>
+                    <!-- Q1 -->
+                    <li>
+                        <label for="exampleInputEmail1">How many one-time donations does your organization recieve
+                            annually?</label>
+                        <input type="email" class="form-control">
+                    </li>
+
+                    <!-- Q2 -->
+                    <li>
+                        <label for="exampleInputEmail1">How many recurring donors does your organization have?</label>
+                        <input type="email" class="form-control">
+                    </li>
+
+                    <!-- sub questions for Q1 and Q2 -->
+                    <ol class="subQs">
                         <li>
-                            <label for="exampleInputEmail1">How many one-time donations does your organization recieve annually?</label>
+                            <label for="exampleInputEmail1">How many hours are spent monthly generating and communicating donation reports?</label>
                             <input type="email" class="form-control">
                         </li>
-                        <!-- Q2 -->
                         <li>
-                            <label for="exampleInputEmail1">How many recurring donors does your organization have?</label>
+                            <label for="exampleInputEmail1">How many hours are spent tracking and reporting on in-kind donation gifts received and estimated fair market value (FVM)?</label>
                             <input type="email" class="form-control">
                         </li>
-                        <!-- Q3 -->
                         <li>
-                            <label for="exampleInputEmail1">How many fundraising events does your organization hold annually?</label>
+                            <label for="exampleInputEmail1">How many hours are spent weekly reconciling donations with accounting systems?</label>
                             <input type="email" class="form-control">
                         </li>
-                        <!-- Q4 -->
                         <li>
-                            <label for="exampleInputEmail1">What is the value of grant revenue won by your organization annually?</label>
-                            <input type="email" class="form-control">
-                        </li>
-                        <!-- Q5 -->
-                        <li>
-                            <label for="exampleInputEmail1">How many hours are spent annually conducting major outreach campaigns to donors?</label>
-                            <input type="email" class="form-control">
-                        </li>
-                        <!-- Q6 -->
-                        <li>
-                            <label for="exampleInputEmail1">How many hours are spent monthly conducting and reconciling matching gift campaigns?</label>
-                            <input type="email" class="form-control">
-                        </li>
-                        <!-- Q7 -->
-                        <li>
-                            <label for="exampleInputEmail1">How many hours are spent monthly tracking and reporting on soft credit history?</label>
-                            <input type="email" class="form-control">
-                        </li>
-                        <!-- Q8 -->
-                        <li>
-                            <label for="exampleInputEmail1">How many hours are spent annually tracking and preparing end of the year tax receipts?</label>
+                            <label for="exampleInputEmail1">How many hours are spent monthly writing thank-you letters for donations?</label>
                             <input type="email" class="form-control">
                         </li>
                     </ol>
-                </form>
-            </div>
+
+                    <!-- Q3 -->
+                    <li>
+                        <label for="exampleInputEmail1">How many fundraising events does your organization hold
+                            annually?</label>
+                        <input type="email" class="form-control">
+                    </li>
+                    <!-- Sub Questions for Q3 -->
+                    <ol class="subQs">
+                        <li>
+                            <label for="exampleInputEmail1">What kind of donation do you receive? Select all that
+                                apply.</label>
+                            <div class="check-box">
+                                <label for="select">Online Donation</label>
+                                <input type="checkbox" class="form-check-input">
+                            </div>
+                            <div class="check-box">
+                                <label for="select">One-Time Donation</label>
+                                <input type="checkbox" class="form-check-input">
+                            </div>
+                            <div class="check-box">
+                                <label for="select">Recurring Donation</label>
+                                <input type="checkbox" class="form-check-input">
+                            </div>
+                        </li>
+                        <!-- Sub Quesitons for Q3 sub question -->
+                        <ol class="subQs">
+                            <li>
+                                <label for="exampleInputEmail1">How much revenue do generate annually from recurring
+                                    donations?</label>
+                                <input type="email" class="form-control">
+                            </li>
+                            <li>
+                                <label for="exampleInputEmail1">How much revenue do generation annually from one-time
+                                    donations?</label>
+                                <input type="email" class="form-control">
+                            </li>
+                            <li>
+                                <label for="exampleInputEmail1">How much revenue do you generate annually from online
+                                    donations?</label>
+                                <input type="email" class="form-control">
+                            </li>
+                        </ol>
+                    </ol>
+
+                    <!-- Q4 -->
+                    <li>
+                        <label for="exampleInputEmail1">What is the value of grant revenue won by your organization
+                            annually?</label>
+                        <input type="email" class="form-control">
+                    </li>
+
+                    <!-- Sub Question for Q4 -->
+                    <ol class="subQs">
+                        <li>
+                            <label for="exampleInputEmail1">How many grant applications does your organization complete
+                                annually?</label>
+                            <input type="email" class="form-control">
+                        </li>
+                        <li>
+                            <label for="exampleInputEmail1">How many hours does your organization spend weekly managing
+                                your grants pipeline?</label>
+                            <input type="email" class="form-control">
+                        </li>
+                        <li>
+                            <label for="exampleInputEmail1">How many hours does your organization spend weekly managing
+                                grant applications and reporting
+                                deadlines?</label>
+                            <input type="email" class="form-control">
+                        </li>
+                        <li>
+                            <label for="exampleInputEmail1">How many hours are spent monthly generating and
+                                communicating grant reports?</label>
+                            <input type="email" class="form-control">
+                        </li>
+                        <li>
+                            <label for="exampleInputEmail1">How many hours does your organization spend monthly managing
+                                allocations of restricted grant
+                                funds?</label>
+                            <input type="email" class="form-control">
+                        </li>
+                    </ol>
+
+                    <!-- Q5 -->
+                    <li>
+                        <label for="exampleInputEmail1">How many hours are spent annually conducting major outreach
+                            campaigns to donors?</label>
+                        <input type="email" class="form-control">
+                    </li>
+
+                    <!-- Q6 -->
+                    <li>
+                        <label for="exampleInputEmail1">How many hours are spent monthly conducting and reconciling
+                            matching gift campaigns?</label>
+                        <input type="email" class="form-control">
+                    </li>
+
+                    <!-- Q7 -->
+                    <li>
+                        <label for="exampleInputEmail1">How many hours are spent monthly tracking and reporting on soft
+                            credit history?</label>
+                        <input type="email" class="form-control">
+                    </li>
+                    
+                    <!-- Q8 -->
+                    <li>
+                        <label for="exampleInputEmail1">How many hours are spent annually tracking and preparing end of
+                            the year tax receipts?</label>
+                        <input type="email" class="form-control">
+                    </li>
+                </ol>
+            </form>
+        </div>
     </section>
 
 </body>

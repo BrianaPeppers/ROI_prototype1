@@ -425,8 +425,10 @@ div.choice-group a {
   min-width: fit-content;
 }
 
-div.choice-group button {
+div.choice-group div.btn-group button {
   width: 100%;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 div.roi-container {
@@ -491,5 +493,47 @@ div.roi-container div.roi-box img {
 div.roi-container div.roi-box button {
   font-size: 2rem;
   margin-top: 2rem;
+}
+
+div.form-box {
+  width: 100%;
+  min-height: 80vh;
+}
+
+div.form-box form {
+  max-width: 1024px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 8rem 2rem;
+  width: 100%;
+}
+
+ol {
+  width: 100%;
+}
+
+li {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+li label {
+  font-size: 1.7rem;
+}
+
+li input {
+  width: 35% !important;
 }
 /*# sourceMappingURL=main.css.map */
