@@ -50,78 +50,105 @@
                     <li>
                         <label for="exampleInputEmail1">How many one-time donations does your organization recieve
                             annually?</label>
-                        <input type="email" class="form-control">
+                        <input type="text" class="form-control">
                     </li>
 
                     <!-- Q2 -->
                     <li>
                         <label for="exampleInputEmail1">How many recurring donors does your organization have?</label>
-                        <input type="email" class="form-control">
+                        <input type="text" class="form-control">
                     </li>
 
                     <!-- sub questions for Q1 and Q2 -->
                     <ol class="subQs">
                         <li>
-                            <label for="exampleInputEmail1">How many hours are spent monthly generating and communicating donation reports?</label>
+                            <label for="exampleInputEmail1">How many hours are spent monthly generating and
+                                communicating donation reports?</label>
                             <input type="email" class="form-control">
                         </li>
                         <li>
-                            <label for="exampleInputEmail1">How many hours are spent tracking and reporting on in-kind donation gifts received and estimated fair market value (FVM)?</label>
+                            <label for="exampleInputEmail1">How many hours are spent tracking and reporting on in-kind
+                                donation gifts received and estimated fair market value (FVM)?</label>
                             <input type="email" class="form-control">
                         </li>
                         <li>
-                            <label for="exampleInputEmail1">How many hours are spent weekly reconciling donations with accounting systems?</label>
+                            <label for="exampleInputEmail1">How many hours are spent weekly reconciling donations with
+                                accounting systems?</label>
                             <input type="email" class="form-control">
                         </li>
                         <li>
-                            <label for="exampleInputEmail1">How many hours are spent monthly writing thank-you letters for donations?</label>
+                            <label for="exampleInputEmail1">How many hours are spent monthly writing thank-you letters
+                                for donations?</label>
                             <input type="email" class="form-control">
                         </li>
                     </ol>
 
                     <!-- Q3 -->
-                    <li>
+                    <li ng-app='Q3' ng-controller='Q3Ctrl'>
                         <label for="exampleInputEmail1">How many fundraising events does your organization hold
                             annually?</label>
-                        <input type="email" class="form-control">
-                    </li>
-                    <!-- Sub Questions for Q3 -->
-                    <ol class="subQs">
-                        <li>
-                            <label for="exampleInputEmail1">What kind of donation do you receive? Select all that
-                                apply.</label>
-                            <div class="check-box">
-                                <label for="select">Online Donation</label>
-                                <input type="checkbox" class="form-check-input">
-                            </div>
-                            <div class="check-box">
-                                <label for="select">One-Time Donation</label>
-                                <input type="checkbox" class="form-check-input">
-                            </div>
-                            <div class="check-box">
-                                <label for="select">Recurring Donation</label>
-                                <input type="checkbox" class="form-check-input">
-                            </div>
-                        </li>
-                        <!-- Sub Quesitons for Q3 sub question -->
-                        <ol class="subQs">
+                        <input type="email" ng-model="amount" ng-change='check()' class="form-control">
+                        <!-- if amount is not 0 show the sub questions -->
+                        <!-- Sub Questions for Q3 -->
+                        <ol class="subQs" ng-show="show">
                             <li>
-                                <label for="exampleInputEmail1">How much revenue do generate annually from recurring
-                                    donations?</label>
-                                <input type="email" class="form-control">
+                                <label for="exampleInputEmail1">What kind of donation do you receive? Select all that
+                                    apply.</label>
+                                <div class="check-box">
+                                    <label for="select">Online Donation</label>
+                                    <input type="checkbox" ng-model="online" class="form-check-input">
+                                </div>
+                                <ol class="subQs">
+                                    <li ng-show="online">
+                                        <label for="exampleInputEmail1">How much revenue do generate annually from
+                                            recurring
+                                            donations?</label>
+                                        <input type="text" class="form-control">
+                                    </li>
+                                </ol>
+                                <div class="check-box">
+                                    <label for="select">One-Time Donation</label>
+                                    <input type="checkbox" ng-model="one" class="form-check-input">
+                                </div>
+                                <ol class="subQs">
+                                    <li ng-show="one">
+                                        <label for="exampleInputEmail1">How much revenue do generation annually from
+                                            one-time
+                                            donations?</label>
+                                        <input type="email" class="form-control">
+                                    </li>
+                                </ol>
+                                <div class="check-box">
+                                    <label for="select">Recurring Donation</label>
+                                    <input type="checkbox" ng-model="recurring" class="form-check-input">
+                                </div>
+                                <ol class="subQs">
+                                    <li ng-show="recurring">
+                                        <label for="exampleInputEmail1">How much revenue do you generate annually from
+                                            online
+                                            donations?</label>
+                                        <input type="email" class="form-control">
+                                    </li>
+                                </ol>
                             </li>
-                            <li>
-                                <label for="exampleInputEmail1">How much revenue do generation annually from one-time
-                                    donations?</label>
-                                <input type="email" class="form-control">
-                            </li>
-                            <li>
-                                <label for="exampleInputEmail1">How much revenue do you generate annually from online
-                                    donations?</label>
-                                <input type="email" class="form-control">
-                            </li>
+
                         </ol>
-                    </ol>
+                    </li>
+                    <script type="text/javascript">
+                        var app = angular.module('Q3', []);
+                        app.controller('Q3Ctrl', function ($scope) {
+                            $scope.show = false;
+                            $scope.check = function () {
+                                if ($scope.amount == '0' || $scope.amount == '') {
+                                    $scope.show = false;
+                                }
+                                if ($scope.amount != '0') {
+                                    $scope.show = true;
+                                }
+                            }
+                        });
+                    </script>
+
 
                     <!-- Q4 -->
                     <li>
@@ -181,7 +208,7 @@
                             credit history?</label>
                         <input type="email" class="form-control">
                     </li>
-                    
+
                     <!-- Q8 -->
                     <li>
                         <label for="exampleInputEmail1">How many hours are spent annually tracking and preparing end of
