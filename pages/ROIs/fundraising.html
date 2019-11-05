@@ -45,6 +45,7 @@
         </header>
         <div class="form-box">
             <form action="">
+                <h1>Hours Saved</h1>
                 <ol>
                     <!-- Q1 -->
                     <div>
@@ -161,7 +162,7 @@
                         app.controller('Q3Ctrl', function ($scope) {
                             $scope.show = false;
                             $scope.check = function () {
-                                if ($scope.amount == '0' || $scope.amount == null ) {
+                                if ($scope.amount == '0' || $scope.amount == null) {
                                     $scope.show = false;
                                 }
                                 if ($scope.amount != '0') {
@@ -238,6 +239,9 @@
                         <input type="email" class="form-control">
                     </li>
                 </ol>
+                <a href="fundraising/CDR.html">
+                    <button type="button" class="btn btn-success">Next</button>
+                </a>
             </form>
         </div>
     </section>

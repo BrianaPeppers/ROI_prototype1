@@ -520,6 +520,10 @@ div.form-box form {
   width: 100%;
 }
 
+div.form-box form button {
+  font-size: 2rem;
+}
+
 ol {
   width: 100%;
 }
