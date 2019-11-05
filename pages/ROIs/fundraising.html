@@ -47,47 +47,69 @@
             <form action="">
                 <ol>
                     <!-- Q1 -->
-                    <li>
-                        <label for="exampleInputEmail1">How many one-time donations does your organization recieve
-                            annually?</label>
-                        <input type="text" class="form-control">
-                    </li>
+                    <div>
+                        <li>
+                            <label for="exampleInputEmail1">How many one-time donations does your organization recieve
+                                annually?</label>
+                            <input type="text" ng-model="amount1" ng-change='check12()' class="form-control">
+                        </li>
 
-                    <!-- Q2 -->
-                    <li>
-                        <label for="exampleInputEmail1">How many recurring donors does your organization have?</label>
-                        <input type="text" class="form-control">
-                    </li>
+                        <!-- Q2 -->
+                        <li>
+                            <label for="exampleInputEmail1">How many recurring donors does your organization
+                                have?</label>
+                            <input type="text" ng-model="amount2" ng-change='check12()' class="form-control">
+                        </li>
+                        <!-- sub questions for Q1 and Q2 -->
+                        <ol class="subQs" style="display: none;">
+                            <li>
+                                <label for="exampleInputEmail1">How many hours are spent monthly generating and
+                                    communicating donation reports?</label>
+                                <input type="email" class="form-control">
+                            </li>
+                            <li>
+                                <label for="exampleInputEmail1">How many hours are spent tracking and reporting on
+                                    in-kind
+                                    donation gifts received and estimated fair market value (FVM)?</label>
+                                <input type="email" class="form-control">
+                            </li>
+                            <li>
+                                <label for="exampleInputEmail1">How many hours are spent weekly reconciling donations
+                                    with
+                                    accounting systems?</label>
+                                <input type="email" class="form-control">
+                            </li>
+                            <li>
+                                <label for="exampleInputEmail1">How many hours are spent monthly writing thank-you
+                                    letters
+                                    for donations?</label>
+                                <input type="email" class="form-control">
+                            </li>
+                        </ol>
+                    </div>
+                    <!-- <script type="text/javascript">
+                        var app12 = angular.module('Q1Q2', []);
+                        app12.controller('Q1Q2Ctrl', function ($scope) {
+                            $scope.show1 = false;
+                            $scope.check12 = function () {
+                                if ($scope.amount1 == '0' || $scope.amount1 == '' && $scope.amount2 == '0' || $scope.amount2 == '') {
+                                    $scope.show1 = false;
+                                }
+                                if ($scope.amount != '0') {
+                                    $scope.show1 = true;
+                                }
+                            }
+                        });
+                    </script> -->
 
-                    <!-- sub questions for Q1 and Q2 -->
-                    <ol class="subQs">
-                        <li>
-                            <label for="exampleInputEmail1">How many hours are spent monthly generating and
-                                communicating donation reports?</label>
-                            <input type="email" class="form-control">
-                        </li>
-                        <li>
-                            <label for="exampleInputEmail1">How many hours are spent tracking and reporting on in-kind
-                                donation gifts received and estimated fair market value (FVM)?</label>
-                            <input type="email" class="form-control">
-                        </li>
-                        <li>
-                            <label for="exampleInputEmail1">How many hours are spent weekly reconciling donations with
-                                accounting systems?</label>
-                            <input type="email" class="form-control">
-                        </li>
-                        <li>
-                            <label for="exampleInputEmail1">How many hours are spent monthly writing thank-you letters
-                                for donations?</label>
-                            <input type="email" class="form-control">
-                        </li>
-                    </ol>
+
+
 
                     <!-- Q3 -->
                     <li ng-app='Q3' ng-controller='Q3Ctrl'>
                         <label for="exampleInputEmail1">How many fundraising events does your organization hold
                             annually?</label>
-                        <input type="email" ng-model="amount" ng-change='check()' class="form-control">
+                        <input type="text" ng-model="amount" ng-change='check()' class="form-control">
                         <!-- if amount is not 0 show the sub questions -->
                         <!-- Sub Questions for Q3 -->
                         <ol class="subQs" ng-show="show">
@@ -139,7 +161,7 @@
                         app.controller('Q3Ctrl', function ($scope) {
                             $scope.show = false;
                             $scope.check = function () {
-                                if ($scope.amount == '0' || $scope.amount == '') {
+                                if ($scope.amount == '0' || $scope.amount == null ) {
                                     $scope.show = false;
                                 }
                                 if ($scope.amount != '0') {
@@ -158,7 +180,7 @@
                     </li>
 
                     <!-- Sub Question for Q4 -->
-                    <ol class="subQs">
+                    <ol class="subQs" style="display: none;">
                         <li>
                             <label for="exampleInputEmail1">How many grant applications does your organization complete
                                 annually?</label>
