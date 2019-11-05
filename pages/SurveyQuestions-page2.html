@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
         <!-- styles -->
-        <link rel="stylesheet" href="styles/sass/main.css">
+        <link rel="stylesheet" href="../styles/sass/main.css">
         <!-- favicon -->
         <link rel="shortcut icon" href="/img/fav.png" type="image/png">
         <!-- fontawesome -->
@@ -28,64 +28,100 @@
     <section>
         <!-- header -->
         <header class="header-wrap">
-                <div class="wrap">
-                    <!-- TB logo -->
-                    <div class="img-box">
-                        <a href="https://www.techbridge.org/">
-                            <img src="img/TBLogo.PNG" alt="LOGO">
-                        </a>
-
-                    </div>
-
+            <div class="wrap">
+                <!-- TB logo -->
+                <div class="img-box">
+                    <a href="https://www.techbridge.org/">
+                        <img src="../img/TBLogo.PNG" alt="LOGO">
+                    </a>
+                </div>                
+                <div class="account-links">
+                  <a href="https://www.techbridge.org/">Homepage</a>                 
                 </div>
-
-            </header>
-
+            </div>
+        </header>
         
         <div class="orsSurvey">
                 <form action="/">
-                <h1>Operational Readiness Survey</h1>
+                <h1>Operational Readiness Survey: Serve</h1>
                 <!--Operational Readiness questions Serve category-->   
-                <p>Serve</p>
                 
-                <div>
-                    <h2>Does the organization have a theory of change that connects its programs and services with the community issues the nonprofit is addressing? 
-                        Do each of your nonprofit programs and services have a logic model developed that contains inputs, activities, outputs, and impact outcome measures? </h2>
-                    <div class="question-answer">
-                    <label><input type="radio" value="none" name="Serve1" />We do not have a theory of change or logic models</label> <br>
-                    <label><input type="radio" value="none" name="Serve1" />We have some aspects of a theory of change and logic models but not for all of our programs</label> <br>
-                    <label><input type="radio" value="none" name="Serve1" />We have a theory of change and program logic models, and we are trying to tie our program delivery to these models</label> <br>
-                    <label><input type="radio" value="none" name="Serve1" />We have a theory of change that clearly connects our programs and services to community impact. We can measure return on investment</label> <br>
-                    <label><input type="radio" value="none" name="Serve1" />N/A</label> <br>
-                    </div>
+                <div class="question-answers">
+                    <div class="question">1. Does the organization have a theory of change that connects its programs and services with the community issues the nonprofit is addressing?</div><hr>
+                    <div class="answers">
+                        <div class="answer"> <input type="radio" value="1" name="Serve1"> <label> Yes </label> </div>
+                        <div class="answer"> <input type="radio" value="1" name="Serve1">  <label> No </label> </div>
+                        <div class="answer"><input type="radio" value="N/A" name="Serve1"/> <label> N/A </label> </div>
+                    </div>    
+                    <!--Question 2 and answers -->   
+                    <div class="question-answers">
+                        <div class="question">1b. Do each of your nonprofit programs and services have a logic model developed that contains inputs, activities, outputs, and impact outcome measures? </div><hr>
+                        <div class="answers">
+                            <div class="answer"> <input type="radio" value="1" name="Serve1b"> <label> We do not have a theory of change or logic models</label> </div>
+                            <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have some aspects of a theory of change and logic models but not for all of our programs</label> </div>
+                            <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have a theory of change and program logic models, and we are trying to tie our program delivery to these models</label> </div>
+                            <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have a theory of change that clearly connects our programs and services to community impact. We can measure return on investment </label> </div>
+                            <div class="answer"><input type="radio" value="N/A" name="Serve1b"/> <label> N/A </label> </div>
+                        </div>    
+                    </div> 
+          
+                      <!--Question 3 and answers -->   
+                    <div class="question-answers">
+                        <div class="question">3. Are you able to easily communicate about your programs with potential clients?</div><hr>
+                        <div class="answers">
+                            <div class="answer"> <input type="radio" value="1" name="Outreach3"> <label> No, we have trouble getting the word out to the right people</label> </div>
+                            <div class="answer"> <input type="radio" value="1" name="Outreach3">  <label> Yes we have enough interest to keep our programs full</label> </div>
+                            <div class="answer"> <input type="radio" value="1" name="Outreach3">  <label> We maintain a wait list for people wanting to experience our programs</label> </div>
+                            <div class="answer"> <input type="radio" value="1" name="Outreach3">  <label>We are able to reach people via partnerships and innovative approaches to create high demand for our programs </label> </div>
+                            <div class="answer"><input type="radio" value="N/A" name="Outreach3"/> <label> N/A </label> </div>
+                        </div>    
+                    </div> 
+                
                 </div>
 
-                <div>
-                    <h2>Do you have a technology plan or roadmap and an appropriate budget to support it?</h2>
-                    <div class="question-answer">
-                    <label><input type="radio" value="none" name="Serve2" />We have neither a plan nor a budget.</label>  <br>
-                    <label><input type="radio" value="none" name="Serve2" />We have a designated IT budget, but no official IT plan</label>  <br>
-                    <label><input type="radio" value="none" name="Serve2" />We have both a plan and a budget and we try to adhere to them.</label>  <br>
-                    <label><input type="radio" value="none" name="Serve2" />We consistently execute against our technology plan and budget and look for new ways to use technology to expand our programs</label>  <br>
-                    <label><input type="radio" value="none" name="Serve2" />N/A</label> <br>  
-                    </div>
+                <!--wrapper class for button to align in the center -->   
+                <div class="buttton-wrapper">
+                        <a href="SurveyQuestions-page1.html">
+                            <button type="button" class="btn btn-success">Previous Page</button>
+                        </a>
+                    <a href="#">
+                    <button type="button" class="btn btn-success">Next Page</button>
+                    </a>
                 </div>
-
-                <div>
-                    <h2>Are you able to easily communicate about your programs with potential clients?</h2>
-                    <div class="question-answer">
-                    <label><input type="radio" value="none" name="Serve3" />No, we have trouble getting the word out to the right people</label>  <br>
-                    <label><input type="radio" value="none" name="Serve3" />Yes we have enough interest to keep our programs full</label>  <br>
-                    <label><input type="radio" value="none" name="Serve3" />We maintain a wait list for people wanting to experience our programs.</label>  <br>
-                    <label><input type="radio" value="none" name="Serve3" />We are able to reach people via partnerships and innovative approaches to create high demand for our programs</label>  <br>
-                    <label><input type="radio" value="none" name="Serve3" />N/A</label> <br>
-                    <br>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-success" formaction="/SurveyQuestions">Next Page</button>
+            
                 </form>
             </div>
     </section>
+    
+    <footer class="wrap-db">
+            <footer class="wrap-lb">
+                <!-- Location -->
+                <div class="footer-box">
+                    <h1>Location</h1>
+                    <span class="red-line"></span>
+                    <h3>100 Peachtree St. NW, Suite 2090</h3>
+                    <h3>Atlanta, GA 30303</h3>
+                </div>
+                <!-- Contact -->
+                <div class="footer-box">
+                    <h1>Contact</h1>
+                    <span class="red-line"></span>
+                    <a href="#"><i class="fas fa-phone"></i>404.879.5412</a>
+                    <a href="#"><i class="fas fa-envelope"></i>info@techbridge.org</a>
+                </div>
+                <!-- Pay Invoice -->
+                <div class="footer-box">
+                    <h1>Pay Invoice</h1>
+                    <span class="red-line"></span>
+                    <h3>To pay invoice,</h3>
+                    <a href="#">click here</a>
+                </div>
+            </footer>
+            <div class="volunteer">
+                <h3>Interesting in taking classes, volunteering or donating?</h3>
+                <h3>Contact Us Today?</h3>
+            </div>
+    </footer>
    
 </body>
 
