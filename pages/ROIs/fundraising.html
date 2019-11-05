@@ -44,7 +44,7 @@
             </div>
         </header>
         <div class="form-box">
-            <form action="">
+            <form action="" ng-app="form" ng-controller="formCtrl">
                 <h1>Hours Saved</h1>
                 <ol>
                     <!-- Q1 -->
@@ -52,17 +52,17 @@
                         <li>
                             <label for="exampleInputEmail1">How many one-time donations does your organization recieve
                                 annually?</label>
-                            <input type="text" ng-model="amount1" ng-change='check12()' class="form-control">
+                            <input type="text" ng-model="amount" ng-change='check()' class="form-control">
                         </li>
 
                         <!-- Q2 -->
                         <li>
                             <label for="exampleInputEmail1">How many recurring donors does your organization
                                 have?</label>
-                            <input type="text" ng-model="amount2" ng-change='check12()' class="form-control">
+                            <input type="text" ng-model="amount1" ng-change='check(amount1)' class="form-control">
                         </li>
                         <!-- sub questions for Q1 and Q2 -->
-                        <ol class="subQs" style="display: none;">
+                        <ol class="subQs" ng-show="show12">
                             <li>
                                 <label for="exampleInputEmail1">How many hours are spent monthly generating and
                                     communicating donation reports?</label>
@@ -88,32 +88,15 @@
                             </li>
                         </ol>
                     </div>
-                    <!-- <script type="text/javascript">
-                        var app12 = angular.module('Q1Q2', []);
-                        app12.controller('Q1Q2Ctrl', function ($scope) {
-                            $scope.show1 = false;
-                            $scope.check12 = function () {
-                                if ($scope.amount1 == '0' || $scope.amount1 == '' && $scope.amount2 == '0' || $scope.amount2 == '') {
-                                    $scope.show1 = false;
-                                }
-                                if ($scope.amount != '0') {
-                                    $scope.show1 = true;
-                                }
-                            }
-                        });
-                    </script> -->
-
-
-
 
                     <!-- Q3 -->
-                    <li ng-app='Q3' ng-controller='Q3Ctrl'>
+                    <li>
                         <label for="exampleInputEmail1">How many fundraising events does your organization hold
                             annually?</label>
-                        <input type="text" ng-model="amount" ng-change='check()' class="form-control">
+                        <input type="text" ng-model="amount3" ng-change='show3.check(amount3)' class="form-control">
                         <!-- if amount is not 0 show the sub questions -->
                         <!-- Sub Questions for Q3 -->
-                        <ol class="subQs" ng-show="show">
+                        <ol class="subQs" ng-show="show3">
                             <li>
                                 <label for="exampleInputEmail1">What kind of donation do you receive? Select all that
                                     apply.</label>
@@ -138,7 +121,7 @@
                                         <label for="exampleInputEmail1">How much revenue do generation annually from
                                             one-time
                                             donations?</label>
-                                        <input type="email" class="form-control">
+                                        <input type="text" class="form-control">
                                     </li>
                                 </ol>
                                 <div class="check-box">
@@ -150,64 +133,51 @@
                                         <label for="exampleInputEmail1">How much revenue do you generate annually from
                                             online
                                             donations?</label>
-                                        <input type="email" class="form-control">
+                                        <input type="text" class="form-control">
                                     </li>
                                 </ol>
                             </li>
 
                         </ol>
                     </li>
-                    <script type="text/javascript">
-                        var app = angular.module('Q3', []);
-                        app.controller('Q3Ctrl', function ($scope) {
-                            $scope.show = false;
-                            $scope.check = function () {
-                                if ($scope.amount == '0' || $scope.amount == null) {
-                                    $scope.show = false;
-                                }
-                                if ($scope.amount != '0') {
-                                    $scope.show = true;
-                                }
-                            }
-                        });
-                    </script>
+
 
 
                     <!-- Q4 -->
                     <li>
                         <label for="exampleInputEmail1">What is the value of grant revenue won by your organization
                             annually?</label>
-                        <input type="email" class="form-control">
+                        <input type="text" ng-model="amount4" ng-change='show4.check(amount4)' class="form-control">
                     </li>
 
                     <!-- Sub Question for Q4 -->
-                    <ol class="subQs" style="display: none;">
+                    <ol class="subQs" ng-show="show4">
                         <li>
                             <label for="exampleInputEmail1">How many grant applications does your organization complete
                                 annually?</label>
-                            <input type="email" class="form-control">
+                            <input type="text" class="form-control">
                         </li>
                         <li>
                             <label for="exampleInputEmail1">How many hours does your organization spend weekly managing
                                 your grants pipeline?</label>
-                            <input type="email" class="form-control">
+                            <input type="text" class="form-control">
                         </li>
                         <li>
                             <label for="exampleInputEmail1">How many hours does your organization spend weekly managing
                                 grant applications and reporting
                                 deadlines?</label>
-                            <input type="email" class="form-control">
+                            <input type="text" class="form-control">
                         </li>
                         <li>
                             <label for="exampleInputEmail1">How many hours are spent monthly generating and
                                 communicating grant reports?</label>
-                            <input type="email" class="form-control">
+                            <input type="text" class="form-control">
                         </li>
                         <li>
                             <label for="exampleInputEmail1">How many hours does your organization spend monthly managing
                                 allocations of restricted grant
                                 funds?</label>
-                            <input type="email" class="form-control">
+                            <input type="text" class="form-control">
                         </li>
                     </ol>
 
@@ -215,34 +185,53 @@
                     <li>
                         <label for="exampleInputEmail1">How many hours are spent annually conducting major outreach
                             campaigns to donors?</label>
-                        <input type="email" class="form-control">
+                        <input type="text" class="form-control">
                     </li>
 
                     <!-- Q6 -->
                     <li>
                         <label for="exampleInputEmail1">How many hours are spent monthly conducting and reconciling
                             matching gift campaigns?</label>
-                        <input type="email" class="form-control">
+                        <input type="text" class="form-control">
                     </li>
 
                     <!-- Q7 -->
                     <li>
                         <label for="exampleInputEmail1">How many hours are spent monthly tracking and reporting on soft
                             credit history?</label>
-                        <input type="email" class="form-control">
+                        <input type="text" class="form-control">
                     </li>
 
                     <!-- Q8 -->
                     <li>
                         <label for="exampleInputEmail1">How many hours are spent annually tracking and preparing end of
                             the year tax receipts?</label>
-                        <input type="email" class="form-control">
+                        <input type="text" class="form-control">
                     </li>
                 </ol>
                 <a href="fundraising/CDR.html">
                     <button type="button" class="btn btn-success">Next</button>
                 </a>
             </form>
+            <script type="text/javascript">
+                var app = angular.module('form', []);
+                app.controller('formCtrl', function ($scope) {
+                    $scope.show12 = false;
+                    $scope.show3 = false;
+                    $scope.show4 = false;
+                    $scope.check = function (amount) {
+                        if ($scope.amount == '0' || $scope.amount == null) {
+                            return false;
+                        }
+                        else{
+                            return true;
+                        }
+                    }
+                    $scope.show12 = $scope.check();
+                    $scope.show3 = $scope.check();
+                    $scope.show4 = $scope.check();
+                });
+            </script>
         </div>
     </section>
 
