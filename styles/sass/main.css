@@ -425,10 +425,75 @@ div.choice-group a {
   min-width: fit-content;
 }
 
-div.choice-group button {
+div.choice-group div.btn-group button {
   width: 100%;
+  margin: 2rem 0;
+  text-align: center;
 }
 
+div.roi-container {
+  max-width: 1024px;
+  width: 100vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+div.roi-container h1.roi-calc {
+  font-size: 4rem;
+  text-align: center;
+  padding: 3rem 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+div.roi-container div.roi-box {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  background-color: #f8fafd;
+  min-height: 45vh;
+  max-height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3rem 0;
+  padding: 1.5rem;
+}
+
+div.roi-container div.roi-box h3, div.roi-container div.roi-box p {
+  text-align: center;
+}
+
+div.roi-container div.roi-box img {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+div.roi-container div.roi-box button {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
 
 form.orsSurvey-form {
   width: 100%;
@@ -494,10 +559,14 @@ div.orsSurvey h1 {
   padding: .5rem;
 }
 
-div.roi-container {
+div.form-box {
+  width: 100%;
+  min-height: 80vh;
+}
+
+div.form-box form {
   max-width: 1024px;
   width: 100vw;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,54 +576,32 @@ div.roi-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-div.roi-container h1.roi-calc {
-  font-size: 4rem;
-  text-align: center;
-  padding: 3rem 0;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-div.roi-container div.roi-box {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  background-color: #f8fafd;
-  min-height: 45vh;
-  max-height: 45vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 3rem 0;
-  padding: 1.5rem;
+  padding: 8rem 2rem;
+  width: 100%;
 }
 
-div.roi-container div.roi-box h3, div.roi-container div.roi-box p {
-  text-align: center;
-}
-
-div.roi-container div.roi-box img {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
-}
-
-div.roi-container div.roi-box button {
+div.form-box form button {
   font-size: 2rem;
-  margin-top: 2rem;
+}
+
+ol {
+  width: 100%;
+}
+
+li {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+li label {
+  font-size: 1.7rem;
+}
+
+li input {
+  width: 35% !important;
 }
 /*# sourceMappingURL=main.css.map */

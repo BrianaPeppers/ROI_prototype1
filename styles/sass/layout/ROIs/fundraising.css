@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=fundraising.css.map */
+div.form-box {
+  width: 100%;
+  min-height: 80vh;
+}
+
+div.form-box form {
+  max-width: 1024px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 8rem 2rem;
+  width: 100%;
+}
+
+div.form-box form button {
+  font-size: 2rem;
+}
+
+ol {
+  width: 100%;
+}
+
+li {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+li label {
+  font-size: 1.7rem;
+}
+
+li input {
+  width: 35% !important;
+}
+/*# sourceMappingURL=fundraising.css.map */
