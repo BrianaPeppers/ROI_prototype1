@@ -25,73 +25,109 @@
 <!-- I'll reformat code into cleaner standards later -->
 
 <body>
-    <section>
-        <!-- header -->
-        <header class="header-wrap">
-            <div class="wrap">
-                <!-- TB logo -->
-                <div class="img-box">
-                    <a href="https://www.techbridge.org/">
-                        <img src="../img/TBLogo.PNG" alt="LOGO">
-                    </a>
-                </div>                
-                <div class="account-links">
-                  <a href="https://www.techbridge.org/">Homepage</a>                 
-                </div>
+    
+    <!-- header -->
+    <header class="header-wrap">
+        <div class="wrap">
+            <!-- TB logo -->
+            <div class="img-box">
+                <a href="https://www.techbridge.org/">
+                    <img src="../img/TBLogo.PNG" alt="LOGO">
+                </a>
+            </div>                
+            <div class="account-links">
+                <a href="https://www.techbridge.org/">Homepage</a>                 
             </div>
-        </header>
-        
-        <div class="orsSurvey">
-                <form action="/">
-                <h1>Operational Readiness Survey: Serve</h1>
-                <!--Operational Readiness questions Serve category-->   
-                
-                <div class="question-answers">
-                    <div class="question">1. Does the organization have a theory of change that connects its programs and services with the community issues the nonprofit is addressing?</div><hr>
-                    <div class="answers">
-                        <div class="answer"> <input type="radio" value="1" name="Serve1"> <label> Yes </label> </div>
-                        <div class="answer"> <input type="radio" value="1" name="Serve1">  <label> No </label> </div>
-                        <div class="answer"><input type="radio" value="N/A" name="Serve1"/> <label> N/A </label> </div>
-                    </div>    
-                    <!--Question 2 and answers -->   
-                    <div class="question-answers">
-                        <div class="question">1b. Do each of your nonprofit programs and services have a logic model developed that contains inputs, activities, outputs, and impact outcome measures? </div><hr>
-                        <div class="answers">
-                            <div class="answer"> <input type="radio" value="1" name="Serve1b"> <label> We do not have a theory of change or logic models</label> </div>
-                            <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have some aspects of a theory of change and logic models but not for all of our programs</label> </div>
-                            <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have a theory of change and program logic models, and we are trying to tie our program delivery to these models</label> </div>
-                            <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have a theory of change that clearly connects our programs and services to community impact. We can measure return on investment </label> </div>
-                            <div class="answer"><input type="radio" value="N/A" name="Serve1b"/> <label> N/A </label> </div>
-                        </div>    
-                    </div> 
-          
-                      <!--Question 3 and answers -->   
-                    <div class="question-answers">
-                        <div class="question">3. Are you able to easily communicate about your programs with potential clients?</div><hr>
-                        <div class="answers">
-                            <div class="answer"> <input type="radio" value="1" name="Outreach3"> <label> No, we have trouble getting the word out to the right people</label> </div>
-                            <div class="answer"> <input type="radio" value="1" name="Outreach3">  <label> Yes we have enough interest to keep our programs full</label> </div>
-                            <div class="answer"> <input type="radio" value="1" name="Outreach3">  <label> We maintain a wait list for people wanting to experience our programs</label> </div>
-                            <div class="answer"> <input type="radio" value="1" name="Outreach3">  <label>We are able to reach people via partnerships and innovative approaches to create high demand for our programs </label> </div>
-                            <div class="answer"><input type="radio" value="N/A" name="Outreach3"/> <label> N/A </label> </div>
-                        </div>    
-                    </div> 
-                
-                </div>
+        </div>
+    </header>
 
-                <!--wrapper class for button to align in the center -->   
-                <div class="buttton-wrapper">
-                        <a href="SurveyQuestions-page1.html">
-                            <button type="button" class="btn btn-success">Previous Page</button>
-                        </a>
-                    <a href="#">
-                    <button type="button" class="btn btn-success">Next Page</button>
-                    </a>
-                </div>
+    <form class="orsSurvey-form">
+        <div class="orsSurvey">
+            <h1>Operational Readiness Survey: Serve</h1>
+            <!--Operational Readiness questions Serve category-->   
             
-                </form>
+            <!--Question 1 and answers -->
+            <div class="question-answers">
+                <div class="question">1. Does the organization have a theory of change that connects its programs and services with the community issues the nonprofit is addressing?</div><hr>
+                <div class="answers">
+                    <div class="answer"> <input type="radio" value="1" name="Serve1"> <label> Yes </label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve1">  <label> No </label> </div>
+                    <div class="answer"><input type="radio" value="N/A" name="Serve1"/> <label> N/A </label> </div>
+                </div>
             </div>
-    </section>
+
+            <!--Question 1b and answers -->   
+            <div class="question-answers">
+                <div class="question">1b. Do each of your nonprofit programs and services have a logic model developed that contains inputs, activities, outputs, and impact outcome measures? </div><hr>
+                <div class="answers">
+                    <div class="answer"> <input type="radio" value="1" name="Serve1b"> <label> We do not have a theory of change or logic models</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have some aspects of a theory of change and logic models but not for all of our programs</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have a theory of change and program logic models, and we are trying to tie our program delivery to these models</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve1b">  <label> We have a theory of change that clearly connects our programs and services to community impact. We can measure return on investment </label> </div>
+                    <div class="answer"><input type="radio" value="N/A" name="Serve1b"/> <label> N/A </label> </div>
+                </div>    
+            </div> 
+    
+            <!--Question 2 and answers -->   
+            <div class="question-answers">
+                <div class="question">2. Has your organization developed short, intermediate, long-term impact outcome measures related to the logic models? Are you tracking and reporting on these measures on a regular basis?</div><hr>
+                <div class="answers">
+                    <div class="answer"> <input type="radio" value="1" name="Serve2"> <label> We do not have defined outcome measures</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve2">  <label> We are measuring outcomes today in many ways, some are very manual (e.g. Excel)</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve2">  <label> We regularly use automation to create key reports on our outcome measures</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve2">  <label> We have all of these items in place and we can identify the data elements that go into each key metric to create program scorecards, reports and dashboards</label> </div>
+                    <div class="answer"><input type="radio" value="N/A" name="Serve2"/> <label> N/A </label> </div>
+                </div>    
+            </div>
+
+            <!--Question 3 and answers -->
+            <div class="question-answers">
+                <div class="question">3. Does your organization have a client/case management system? If so, does that system have integration capability with community platform?</div><hr>
+                <div class="answers">
+                    <div class="answer"> <input type="radio" value="1" name="Serve3"> <label> Everything is manual; we have no formal client management system</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve3">  <label> We have a system to manage cases but it is not very efficient</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve3">  <label> We have a solid case management system with good reporting</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve3">  <label> We have a client management system that meets all of our needs and allows us to share data with other community service providers</label> </div>
+                    <div class="answer"><input type="radio" value="N/A" name="Serve3"/> <label> N/A </label> </div>
+                </div>
+            </div>
+
+            <!--Question 4 and answers -->
+            <div class="question-answers">
+                <div class="question">4. Do you have a solid technology foundation at your organization?</div><hr>
+                <div class="answers">
+                    <div class="answer"> <input type="radio" value="1" name="Serve3"> <label> We have limited bandwidth and our backup and security are weak</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve3">  <label> We have intermittent bandwidth issues and we have concerns about security and backup</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve3">  <label> Our internet, security and backup infrastructure meets most of our needs</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve3">  <label> We are pleased with our bandwidth and confident in our backup and security practices</label> </div>
+                    <div class="answer"><input type="radio" value="N/A" name="Serve3"/> <label> N/A </label> </div>
+                </div>    
+            </div>
+
+            <!--Question 5 and answers -->
+            <div class="question-answers">
+                <div class="question">5. Do you have productivity tools that allow you to save time and be effective?</div><hr>
+                <div class="answers">
+                    <div class="answer"> <input type="radio" value="1" name="Serve2"> <label> We have regular issues with our email, file share and calendars</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve2">  <label> We feel that we could be more efficient with our email, file share and calendars</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve2">  <label> We have these services available for us on a consistent basis</label> </div>
+                    <div class="answer"> <input type="radio" value="1" name="Serve2">  <label> Yes we have an aligned platform for cloud email, file sharing and calendaring</label> </div>
+                    <div class="answer"><input type="radio" value="N/A" name="Serve2"/> <label> N/A </label> </div>
+                </div>    
+            </div>
+
+            <!--wrapper class for button to align in the center -->   
+            <div class="buttton-wrapper">
+                    <a href="SurveyQuestions-page1.html">
+                        <button type="button" class="btn btn-success">Previous Page</button>
+                    </a>
+                <a href="#">
+                <button type="button" class="btn btn-success">Next Page</button>
+                </a>
+            </div> 
+            
+        </div>
+    </form>
     
     <footer class="wrap-db">
             <footer class="wrap-lb">
