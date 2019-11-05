@@ -455,6 +455,9 @@ div.question-answers {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.question {
