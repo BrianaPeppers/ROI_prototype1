@@ -43,4 +43,8 @@ li label {
 li input {
   width: 35% !important;
 }
+
+ol.subQs label {
+  color: blue;
+}
 /*# sourceMappingURL=fundraising.css.map */
