@@ -52,14 +52,14 @@
                         <li>
                             <label for="exampleInputEmail1">How many one-time donations does your organization recieve
                                 annually?</label>
-                            <input type="text" ng-model="amount" ng-change='check()' class="form-control">
+                            <input type="text" ng-model="amount1" ng-change='check12()' class="form-control">
                         </li>
 
                         <!-- Q2 -->
                         <li>
                             <label for="exampleInputEmail1">How many recurring donors does your organization
                                 have?</label>
-                            <input type="text" ng-model="amount1" ng-change='check(amount1)' class="form-control">
+                            <input type="text" ng-model="amount1" ng-change='check12()' class="form-control">
                         </li>
                         <!-- sub questions for Q1 and Q2 -->
                         <ol class="subQs" ng-show="show12">
@@ -93,7 +93,7 @@
                     <li>
                         <label for="exampleInputEmail1">How many fundraising events does your organization hold
                             annually?</label>
-                        <input type="text" ng-model="amount3" ng-change='show3.check(amount3)' class="form-control">
+                        <input type="text" ng-model="amount3" ng-change='check3()' class="form-control">
                         <!-- if amount is not 0 show the sub questions -->
                         <!-- Sub Questions for Q3 -->
                         <ol class="subQs" ng-show="show3">
@@ -147,7 +147,7 @@
                     <li>
                         <label for="exampleInputEmail1">What is the value of grant revenue won by your organization
                             annually?</label>
-                        <input type="text" ng-model="amount4" ng-change='show4.check(amount4)' class="form-control">
+                        <input type="text" ng-model="amount4" ng-change='check4()' class="form-control">
                     </li>
 
                     <!-- Sub Question for Q4 -->
@@ -164,8 +164,7 @@
                         </li>
                         <li>
                             <label for="exampleInputEmail1">How many hours does your organization spend weekly managing
-                                grant applications and reporting
-                                deadlines?</label>
+                                grant applications and reporting deadlines?</label>
                             <input type="text" class="form-control">
                         </li>
                         <li>
@@ -175,8 +174,7 @@
                         </li>
                         <li>
                             <label for="exampleInputEmail1">How many hours does your organization spend monthly managing
-                                allocations of restricted grant
-                                funds?</label>
+                                allocations of restricted grant funds?</label>
                             <input type="text" class="form-control">
                         </li>
                     </ol>
@@ -219,17 +217,30 @@
                     $scope.show12 = false;
                     $scope.show3 = false;
                     $scope.show4 = false;
-                    $scope.check = function (amount) {
-                        if ($scope.amount == '0' || $scope.amount == null) {
-                            return false;
-                        }
-                        else{
-                            return true;
+                    $scope.check12 = function () {
+                        if ($scope.amount1 == '0' || $scope.amount1 == '') {
+                            $scope.show12= false;
+                        } else {
+                            $scope.show12 = true;
                         }
                     }
-                    $scope.show12 = $scope.check();
-                    $scope.show3 = $scope.check();
-                    $scope.show4 = $scope.check();
+                    
+                    $scope.check3 = function () {
+                        if ($scope.amount3 == '0' || $scope.amount3 == '') {
+                            $scope.show3 = false;
+                        } else {
+                            $scope.show3 = true;
+                        }
+                    }
+                    
+                    $scope.check4 = function () {
+                        if ($scope.amount4 == '0' || $scope.amount4 == '') {
+                            $scope.show4= false;
+                        } else {
+                            $scope.show4 = true;
+                        }
+                    }
+                   
                 });
             </script>
         </div>
