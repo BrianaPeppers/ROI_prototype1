@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TechBridge: Operational Readiness Survey</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="../styles/sass/main.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../img/fav.png" type="image/png">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/ee56650e50.js" crossorigin="anonymous"></script>
+
+  <!-- Fonts ~ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+
+  <!-- angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+
+</head>
+
+<body>
+     <!-- header -->
+     <header class="header-wrap">
+            <div class="wrap">
+                <!-- TB logo -->
+                <div class="img-box">
+                    <a href="https://www.techbridge.org/">
+                        <img src="../img/TBLogo.PNG" alt="LOGO">
+                    </a>
+                </div> 
+                
+                <div class="account-links">
+                  <a href="../index.html">Homepage</a>
+                  
+                </div>
+            </div>
+
+        </header>
+        
+  
+
+    <form class="orsSurvey-form">
+        <div class="orsSurvey">
+            <h1>Operational Readiness Survey: Data</h1>
+            <!--Other Software Checkbox page and answers -->
+
+            <div ng-app>
+                <div >
+                    <input type="checkbox" ng-true-value="A" ng-false-value="B" ng-model="check"/>        
+                </div>
+                
+                <div ng-show="check == 'A'">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div>
+            </div>
+
+            <div class="question-answers">
+              <div class="question">Please tell us what software or services your organization is using to track the following data: (Check all that apply)</div><hr>
+              <div class="answers">
+                <div class="answer"> <input type="radio" value="1" name="Checklist1"> <label> Yes, we have a system for tracking donations/donors</label> </div>
+            
+             </div>    
+            </div>
+
+           <div class="input-group mb-3">
+             <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+
+            <!--wrapper class for button to align in the center -->   
+            <div class="buttton-wrapper">
+                <a href="SurveyQuestions-page4.html">
+                    <button type="button" class="btn btn-success">Previous Page</button>
+                </a>             
+                <a href="#">
+                    <button type="button" class="btn btn-success">Next Page</button>
+                </a>
+            </div>    
+
+        </div>
+    </form>
+   
+      <footer class="wrap-db">
+          <footer class="wrap-lb">
+              <!-- Location -->
+              <div class="footer-box">
+                  <h1>Location</h1>
+                  <span class="red-line"></span>
+                  <h3>100 Peachtree St. NW, Suite 2090</h3>
+                  <h3>Atlanta, GA 30303</h3>
+              </div>
+              <!-- Contact -->
+              <div class="footer-box">
+                  <h1>Contact</h1>
+                  <span class="red-line"></span>
+                  <a href="#"><i class="fas fa-phone"></i>404.879.5412</a>
+                  <a href="#"><i class="fas fa-envelope"></i>info@techbridge.org</a>
+              </div>
+              <!-- Pay Invoice -->
+              <div class="footer-box">
+                  <h1>Pay Invoice</h1>
+                  <span class="red-line"></span>
+                  <h3>To pay invoice,</h3>
+                  <a href="#">click here</a>
+              </div>
+          </footer>
+          <div class="volunteer">
+              <h3>Interesting in taking classes, volunteering or donating?</h3>
+              <h3>Contact Us Today?</h3>
+          </div>
+      </footer>
+
+</body>
+
+</html>
