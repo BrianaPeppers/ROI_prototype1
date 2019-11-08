@@ -51,7 +51,12 @@
         </header>
         
   
-
+    <ul id="progressbar">
+        <li class="active">Account Setup</li>
+        <li>Social Profiles</li>
+        <li>Personal Details</li>
+    </ul>
+    
     <form class="orsSurvey-form">
         <div class="orsSurvey">
             <h1>Operational Readiness Survey: Data</h1>
@@ -93,7 +98,18 @@
                 <a href="#">
                     <button type="button" class="btn btn-success">Next Page</button>
                 </a>
-            </div>    
+            </div>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+                </label>
+              </div>    
 
         </div>
     </form>
